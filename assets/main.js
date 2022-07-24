@@ -26,10 +26,17 @@ $(document).ready(function () {
         items: 1,
         stagePadding: 50,
       },
-      375: {
-        margin: 20,
-        items: 1.2,
+      365: {
+        items: 1,
         stagePadding: 50,
+      },
+      390: {
+        items: 1,
+        stagePadding: 65,
+      },
+      425: {
+        items: 1.2,
+        stagePadding: 65,
       },
       960: {
         items: 3,
