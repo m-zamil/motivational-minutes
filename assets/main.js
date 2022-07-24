@@ -17,9 +17,8 @@ $(document).ready(function () {
     },
   });
   $(".carousel-2").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 20,
-    center: true,
     nav: true,
     responsive: {
       0: {
@@ -44,6 +43,43 @@ $(document).ready(function () {
         stagePadding: 0,
       },
     },
+  });
+
+  // $(".toggle").each(function () {
+  //   $(this).click(function () {
+  //     var elem = $(this).text();
+  //     if (elem == "Learn More +") {
+  //       $(this).text("Read Less -");
+  //       $(this).next().slideDown();
+  //     } else {
+  //       $(this).text("Learn More +");
+  //       $(this).next().slideUp();
+  //     }
+  //   });
+  // });
+
+  // .click(function () {
+  //   var elem = $(".toggle").text();
+  //   if (elem == "Learn More +") {
+  //     $(".toggle").text("Read Less -");
+  //     $("#speakerBio").slideDown();
+  //   } else {
+  //     $(".toggle").text("Learn More +");
+  //     $("#speakerBio").slideUp();
+  //   }
+  // });
+});
+
+$(".toggle").each(function () {
+  $(this).click(function () {
+    var elem = $(this).text();
+    if (elem == "Learn More +") {
+      $(this).text("Read Less -");
+      $(this).next().slideDown();
+    } else {
+      $(this).text("Learn More +");
+      $(this).next().slideUp();
+    }
   });
 });
 

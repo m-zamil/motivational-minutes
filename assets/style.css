@@ -458,12 +458,22 @@ button {
 .speaker__card__cta {
   text-align: center;
 }
-.speaker__card__cta a {
+.speaker__card__cta button {
   color: #00abc8;
+  font-size: 16px;
+  font-family: "Roboto", cursive;
   font-weight: bold;
   padding: 8px 0;
   margin: 8px 0;
   text-decoration: underline;
+  background: none;
+  outline: none;
+  border: 0;
+  margin: 0;
+}
+
+.speakerBio {
+  display: none;
 }
 /* --testmonial-- */
 .testmonial {
