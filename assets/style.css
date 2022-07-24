@@ -201,6 +201,9 @@ button {
   padding: 16px 0;
   margin-bottom: 64px;
 }
+.intro .section__title {
+  margin-top: 8px;
+}
 .intro__content {
   max-width: 352px;
   padding: 16px;
@@ -570,6 +573,7 @@ button {
   }
   .intro .section__title {
     max-width: 420px;
+    margin-top: 0.8em;
   }
 
   .intro__content {
