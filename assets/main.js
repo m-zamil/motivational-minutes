@@ -46,19 +46,6 @@ $(document).ready(function () {
       },
     },
   });
-
-  $(".toggle").each(function () {
-    $(this).click(function () {
-      var elem = $(this).text();
-      if (elem == "Learn More +") {
-        $(this).text("Read Less -");
-        $(this).next().slideDown();
-      } else {
-        $(this).text("Learn More +");
-        $(this).next().slideUp();
-      }
-    });
-  });
 });
 
 window.onload = function () {
@@ -90,4 +77,16 @@ window.onload = function () {
       ],
     });
   }
+  $(".toggle").each(function () {
+    $(this).click(function () {
+      var elem = $(this).text();
+      if (elem == "Learn More +") {
+        $(this).text("Read Less -");
+        $(this).next().slideDown();
+      } else {
+        $(this).text("Learn More +");
+        $(this).next().slideUp();
+      }
+    });
+  });
 };
