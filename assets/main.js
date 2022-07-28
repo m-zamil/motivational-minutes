@@ -41,6 +41,8 @@ $(document).ready(function () {
         items: 3,
         margin: 50,
         stagePadding: 0,
+        center: true,
+        loop: true,
       },
     },
   });
