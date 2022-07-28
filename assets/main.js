@@ -45,41 +45,17 @@ $(document).ready(function () {
     },
   });
 
-  // $(".toggle").each(function () {
-  //   $(this).click(function () {
-  //     var elem = $(this).text();
-  //     if (elem == "Learn More +") {
-  //       $(this).text("Read Less -");
-  //       $(this).next().slideDown();
-  //     } else {
-  //       $(this).text("Learn More +");
-  //       $(this).next().slideUp();
-  //     }
-  //   });
-  // });
-
-  // .click(function () {
-  //   var elem = $(".toggle").text();
-  //   if (elem == "Learn More +") {
-  //     $(".toggle").text("Read Less -");
-  //     $("#speakerBio").slideDown();
-  //   } else {
-  //     $(".toggle").text("Learn More +");
-  //     $("#speakerBio").slideUp();
-  //   }
-  // });
-});
-
-$(".toggle").each(function () {
-  $(this).click(function () {
-    var elem = $(this).text();
-    if (elem == "Learn More +") {
-      $(this).text("Read Less -");
-      $(this).next().slideDown();
-    } else {
-      $(this).text("Learn More +");
-      $(this).next().slideUp();
-    }
+  $(".toggle").each(function () {
+    $(this).click(function () {
+      var elem = $(this).text();
+      if (elem == "Learn More +") {
+        $(this).text("Read Less -");
+        $(this).next().slideDown();
+      } else {
+        $(this).text("Learn More +");
+        $(this).next().slideUp();
+      }
+    });
   });
 });
 
