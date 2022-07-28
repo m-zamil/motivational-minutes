@@ -4,7 +4,7 @@ $(document).ready(function () {
     margin: 0,
     nav: true,
     dots: false,
-    navText: ["<img src='./assets/images/slider/carrot-left.png'>", "<img src='./assets/images/slider/carrot-right.png'>"],
+    navText: ["<img src='https://s3fstest.paintnite.com/fresca-web-html/paintnite/motivational-minutes/assets/images/slider/carrot-left.png'>", "<img src='https://s3fstest.paintnite.com/fresca-web-html/paintnite/motivational-minutes/assets/images/slider/carrot-right.png'>"],
     center: true,
     stagePadding: 0,
     responsive: {
