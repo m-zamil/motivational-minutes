@@ -87,6 +87,7 @@ window.onload = function () {
         $(this).text("Learn More +");
         $(this).next().slideUp();
       }
+      return false;
     });
   });
 };

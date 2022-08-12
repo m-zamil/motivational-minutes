@@ -231,6 +231,9 @@ button {
   position: relative;
   z-index: 2;
 }
+.intro__slider .owl-carousel .item__content h4 {
+  text-transform: uppercase;
+}
 
 .intro__slider .owl-carousel .owl-nav {
   position: absolute;
@@ -428,6 +431,9 @@ button {
   user-select: none;
   text-align: center;
 }
+.spot__ray {
+  display: none;
+}
 .speakers__slider {
   margin-top: -150px;
 }
@@ -457,8 +463,10 @@ button {
 }
 .speaker__card__cta {
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
-.speaker__card__cta button {
+.speaker__card__cta .toggle {
   color: #00abc8;
   font-size: 16px;
   font-family: "Roboto", cursive;
@@ -470,6 +478,11 @@ button {
   outline: none;
   border: 0;
   margin: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.speaker__card__cta .toggle:hover {
+  color: #02849b;
 }
 
 .speakerBio {
@@ -796,19 +809,42 @@ button {
     height: 3px;
     margin: -51px auto 0;
   }
+  .speaker__link {
+    display: block;
+    position: relative;
+    padding-top: 91px;
+  }
+  .spot__ray {
+    display: none;
+    position: absolute;
+    top: -32px;
+    left: -100px;
+    right: -120px;
+  }
+  .speaker__link:hover .spot__ray {
+    display: block;
+  }
+  .speaker__link:hover img {
+    filter: grayscale(0) !important;
+  }
+  .speaker__link .spot__ray img {
+    max-width: 100% !important;
+  }
+
   .speakers__slider {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -230px;
+    /* margin-top: 61px; */
+    margin-top: -31px;
   }
   .speakers__slider .owl-item img {
     filter: grayscale(100%);
     max-width: 250px;
   }
-  .speakers__slider .owl-item.active img {
+  /* .speakers__slider .owl-item.active img {
     filter: grayscale(0);
-  }
+  } */
   .speakers__slider .owl-item.active ~ .owl-item.active img {
     filter: grayscale(100%);
   }
